@@ -37,9 +37,11 @@ var server = http.createServer(function (req,res){
 			res.end(data);
 		});
 	}
-	
 	else{
-		res.end('Invalido');
+		res.writeHead(404,{'Content-Type':'text/html'});
+		fs.readFile('error.html',function(err,data){
+			res.end(data);
+		});
 	}
 
 });
