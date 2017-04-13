@@ -8,9 +8,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  	<script type="text/javascript">
- 		var validar = function(){
- 			var nombre = document.getElementById('nombres').value;
- 		}
+ 		var validar = function() {
+		var nombre = document.getElementById('nombres').value;
+		// var apellido = document.getElementById('apellidos').value;
+
+		document.getElementById('apellidos').value = nombre;
+		// var x = document.forms["validar"]["email"].value;
+		// var atpos = x.indexOf("@");
+		// var dotpos = x.lastIndexOf(".");
+		// if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+		// 	alert("Not a valid e-mail address");
+		// 	return false;
+		// }
+		
+		// if(nombre == " " || apellido == " "){
+		// 	alert('Nombres y apellidos son obligatorios');
+		// }
+		
+		// console.log(nombre + " " + apellido);
+
+	};
  	</script>
 
 </head>
@@ -70,7 +87,7 @@
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-			  <button type="submit" class="btn btn-default" onclick="validar()">Submit</button>
+			  <input type="button" value="Enviar" onclick="validar()">
 			</div>
 		</div>
 	</form>
