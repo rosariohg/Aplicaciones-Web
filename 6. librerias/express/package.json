@@ -1,0 +1,11 @@
+{
+  "name": "ejemplo express",
+  "version": "0.0.1",
+  "description": "aplicacion usando express",
+  "main": "index.js",
+  "author": "rosario",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
