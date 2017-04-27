@@ -1,0 +1,11 @@
+{
+  "name": "tecsup-2017-tarea-huancagonza",
+  "version": "0.0.1",
+  "description": "modulo",
+  "main": "index.js",
+  "author": "rosario",
+  "license": "ISC",
+  "dependencies": {
+    
+  }
+}
