@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div>
+
+  <button>Click me</button>
+
+</div>
+
+
+<script>
+	 var nodes = document.getElementsByTagName('button');
+	function manejador(n) {
+		return function() {
+			console.log('Tu clickeaste el elemento # ' + n);
+		}
+	}
+
+	for(var i=0; i<nodes.length; i++) {
+		nodes[i].addEventListener('click', manejador(i));
+	}
+</script>
+
+</body>
+</html>

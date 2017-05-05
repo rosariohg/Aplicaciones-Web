@@ -1,0 +1,11 @@
+{
+  "name": "otro_proyecto",
+  "version": "0.0.1",
+  "description": "administracion de librerias",
+  "main": "index.js",
+  "author": "rosario",
+  "license": "ISC",
+  "dependencies": {
+    "tecsup-2017-huancagonza": "0.0.1"
+  }
+}
