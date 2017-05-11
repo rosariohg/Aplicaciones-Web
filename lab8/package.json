@@ -1,0 +1,11 @@
+{
+  "name": "lab8",
+  "version": "1.0.0",
+  "description": "Sitio Web con Express",
+  "main": "index.js",
+  "author": "rosario",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
