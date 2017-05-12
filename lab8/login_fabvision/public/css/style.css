@@ -9,7 +9,7 @@ main {
 }
 
 body {
-  background: url("../img/pared_1.jpg");
+  background: url("../img/background.jpg");
 }
 
 .input-field input[type=date]:focus + label,
