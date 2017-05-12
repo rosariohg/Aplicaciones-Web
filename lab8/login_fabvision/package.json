@@ -1,0 +1,11 @@
+{
+  "name": "login_fabvision",
+  "version": "0.0.1",
+  "description": "login",
+  "main": "index.js",
+  "author": "Rosario",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
