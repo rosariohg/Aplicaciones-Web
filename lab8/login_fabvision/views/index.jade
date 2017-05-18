@@ -1,0 +1,84 @@
+include mixins
+	extends layout
+	block content
+			+nav("Project name", "dropdown_menu")
+				+nav_item( "index.html", "active" ) Home
+				+nav_item( "about.html" ) About
+				+nav_item( "contact.html" ) Contact
+				+nav_item_dropdown( "#" )( label="Dropdown" )
+					+nav_item( "#" ) Action
+					+nav_item( "#" ) Another action
+					+nav_item( "#" ) Something else here
+					+nav_divider
+					+nav_header Nav header
+					+nav_item( "#" ) Separated link
+					+nav_item( "#" ) One more separated link
+			.row
+				.col-md-4.col-sm-6.col-xs-12
+					+panel("Panel Heading") Este es un ejemplo de Panel
+				.col-md-4.col-sm-6.col-xs-12
+					+panel("Panel Heading","success") Panel exitoso
+				.col-md-4.col-sm-6.col-xs-12
+					+panel("Panel Heading","danger") Panel peligroso
+
+			a.btn.btn-default Default 
+			a.btn.btn-primary( href="link.htm" ) Primary
+			a.btn.btn-success Success 
+			a.btn.btn-info Info
+			a.btn.btn-warning Warning 
+			a.btn.btn-danger Danger
+
+			br
+
+			+button Defaults
+			+button("primary", "link.htm") Primary
+			+button("success", "success.html", "large") Success
+			+button("info", "info.html", "small") Info
+			+button("warning", "warning.html", "mini") Warning
+
+			br
+
+			+alert("warning") Warning! Warning!
+			+alert("danger") Danger Will Robinson!
+			+alert("success") You succeeded :-)
+			+alert("info") Some information for you
+
+			.jumbotron
+			h1 Hello, world!
+			p This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+			p: +button("primary", "more.htm", "large") Learn more
+
+			ul.list-group
+				li.list-group-item.active Cras justo odio
+				li.list-group-item Dapibus ac facilisis in
+				li.list-group-item Morbi leo risus
+				li.list-group-item Dapibus ac facilisis in
+				li.list-group-item Morbi leo risus
+				li.list-group-item Dapibus ac facilisis in
+
+			.list-group
+				a.list-group-item.active( href="#" )
+					h4.list-group-item-heading List group item heading
+					p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+				a.list-group-item( href="#" )
+					h4.list-group-item-heading List group item heading
+					p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+				a.list-group-item( href="#" )
+					h4.list-group-item-heading List group item heading
+					p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+
+			.list-group
+				.list-group-item( href="#" )
+					h4.list-group-item-heading List group item heading
+					p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+				.list-group-item( href="#" )
+					h4.list-group-item-heading List group item heading
+					p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+				.list-group-item( href="#" )
+					h4.list-group-item-heading List group item heading
+					p.list-group-item-text Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+
+		script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+		script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+
+	
