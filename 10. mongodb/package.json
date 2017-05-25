@@ -1,17 +1,15 @@
 {
-  "name": "fabvision",
-  "version": "1.0.0",
-  "description": "",
+  "name": "lab8tarea",
+  "version": "0.0.1",
+  "description": "haciendo el landing page de la tarea lab08",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "rosario",
+  "author": "Carpio Lam",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
-    "jade": "^1.11.0",
-    "mongoose": "^4.10.2"
+    "express": "^4.15.2",
+    "jade": "^1.11.0"
   }
 }

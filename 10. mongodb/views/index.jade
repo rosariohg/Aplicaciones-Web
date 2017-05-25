@@ -1,130 +1,17 @@
 doctype
-html( lang="es" )
+html(lang="es")
 	head
-		meta(charset='UTF-8')
-		meta(http-equiv='X-UA-Compatible', content='IE=edge')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-		meta(name='description', content='')
-		meta(name='author', content='')
-		link(rel='icon', href='../../favicon.ico')
-		title FABVISION
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
-		// link(rel="stylesheet",href="css/bootstrap.min.css")
-		// Custom styles for this template
-		link(href='../css/carousel.css', rel='stylesheet')
+	title PLantilla Boostrap con Jade
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible',content='IE=edge')
+	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	meta(name='description', content='Baking Bootstrap Snippets with Jade')
+		//-Bootswatch Theme
+		link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css",rel="stylesheet")
 
-	body(data-spy='scroll', data-target='.scrollspy')
-		.navbar-wrapper
-			.container
-				nav.navbar.navbar-inverse.navbar-static-top
-					.container
-						.navbar-header
-							button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-								span.sr-only Toggle navigation
-								span.icon-bar
-								span.icon-bar
-								span.icon-bar
-							a.navbar-brand(href='#') FABVISION
-							
-						#navbar.navbar-collapse.collapse
-							ul.nav.navbar-nav
-								li.active
-									a(href='#') Inicio
-								li
-									a(href='#about') Nosotros
-								li
-									a(href='#contact') Productos
-
-		#carousel-myCarousel.carousel.slide(data-ride='carousel')
-			ol.carousel-indicators
-				li.active(data-target='#carousel-myCarousel', data-slide-to='0')
-				li(data-target='#carousel-myCarousel', data-slide-to='1')
-				li(data-target='#carousel-myCarousel', data-slide-to='2')
-			.carousel-inner(role='listbox')
-				.item.active
-					img(src='../images/banner1.png')
-					.carousel-caption
-						a.btn.btn-lg.btn-primary(href='#', role='button') Leer más
-				.item
-					img(src='../images/banner1.jpg')
-					.carousel-caption
-						h1 Monitoreamos tu casa en todo momento
-						p
-							| Lorem Ipsum 
-						p
-							a.btn.btn-lg.btn-primary(href='#', role='button') Leer más
-				.item
-					img(src='../images/banner3.jpg')
-					.carousel-caption
-						h1 Notificaciones de intrusos en tu hogar, casa o empresa
-						p
-							| Lorem Ipsum 
-						p
-							a.btn.btn-lg.btn-primary(href='#', role='button') Leer más
-			a.left.carousel-control(href='#carousel-myCarousel', role='button', data-slide='prev')
-				span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-				span.sr-only Previous
-			a.right.carousel-control(href='#carousel-myCarousel', role='button', data-slide='next')
-				span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-				span.sr-only Next
-
-		.container.marketing
-			.row
-				.col-lg-4
-					img.img-circle(src='../images/marketing1.png', alt='Generic placeholder image', width='140', height='140')
-					h2 Persona 1
-					p
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra felis id laoreet pharetra. Integer ut justo vehicula, porttitor quam sed, tincidunt orci. Cras ut urna nec lorem tristique suscipit.
-					p
-						a.btn.btn-default(href='#', role='button') Ver detalles &raquo;
-				.col-lg-4
-					img.img-circle(src='../images/marketing2.png', alt='Generic placeholder image', width='140', height='140')
-					h2 Persona 2
-					p
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra felis id laoreet pharetra. Integer ut justo vehicula, porttitor quam sed, tincidunt orci. Cras ut urna nec lorem tristique suscipit.
-					p
-						a.btn.btn-default(href='#', role='button') Ver detalles &raquo;
-				.col-lg-4
-					img.img-circle(src='../images/marketing3.png', alt='Generic placeholder image', width='140', height='140')
-					h2 Persona 3
-					p
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra felis id laoreet pharetra. Integer ut justo vehicula, porttitor quam sed, tincidunt orci. Cras ut urna nec lorem tristique suscipit.
-					p
-						a.btn.btn-default(href='#', role='button') Ver detalles &raquo;
-
-			hr.featurette-divider
-			.row.featurette
-				.col-md-7
-					h2.featurette-heading
-						| Reconocimiento de rostros
-					p.lead
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra felis id laoreet pharetra. Integer ut justo vehicula, porttitor quam sed, tincidunt orci. Cras ut urna nec lorem tristique suscipit.
-				.col-md-5
-					img.featurette-image.img-responsive.center-block(src='../images/face1.jpg', alt='Generic placeholder image')
-			hr.featurette-divider
-			.row.featurette
-				.col-md-7.col-md-push-5
-					h2.featurette-heading
-						| Notificación en dispositivos
-					p.lead
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra felis id laoreet pharetra. Integer ut justo vehicula, porttitor quam sed, tincidunt orci. Cras ut urna nec lorem tristique suscipit.
-				.col-md-5.col-md-pull-7
-					img.featurette-image.img-responsive.center-block(src='../images/seguridad.png', alt='Generic placeholder image')
-			hr.featurette-divider
-			.row.featurette
-				.col-md-7
-					h2.featurette-heading
-						| Seguridad con cualquier cámara
-					p.lead
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra felis id laoreet pharetra. Integer ut justo vehicula, porttitor quam sed, tincidunt orci. Cras ut urna nec lorem tristique suscipit.
-				.col-md-5
-					img.featurette-image.img-responsive.center-block(src='../images/camera1.png', alt='Generic placeholder image')
-			hr.featurette-divider
-
-			footer
-				p.pull-right
-					a(href='#') Back to top
-				p
-					| &copy; 2017 Company, FABVISION
-					
-		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+	body(style="padding-bottom:10rem;")
+		.container
+				+nav("Project name","dropdown_menu")
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+		script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+		
