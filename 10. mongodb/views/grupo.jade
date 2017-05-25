@@ -1,0 +1,12 @@
+table.table
+  thead
+    tr
+      th ID
+      th Nombre
+      th Lugar
+  tbody
+    for item in data
+      tr
+        td= item._id
+        td= item.nombre
+        td= item.lugar

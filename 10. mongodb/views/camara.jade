@@ -1,0 +1,16 @@
+table.table
+  thead
+    tr
+      th ID
+      th # de Camara
+      th Grupo
+      th IP
+      th Puerto
+  tbody
+    for item in data
+      tr
+        td= item._id
+        td= item.num_camara
+        td= item.grupo
+        td= item.ip
+        td= item.puerto

@@ -1,15 +1,17 @@
 {
-  "name": "lab8tarea",
+  "name": "lab10",
   "version": "0.0.1",
-  "description": "haciendo el landing page de la tarea lab08",
+  "description": "CRUD Fabvision mongodb",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Carpio Lam",
+  "author": "Rosario Huanca",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.2",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "mongoose": "^4.10.2"
   }
 }

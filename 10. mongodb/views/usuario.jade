@@ -1,0 +1,18 @@
+table.table
+  thead
+    tr
+      th ID
+      th Nombre
+      th Apellidos
+      th Correo
+      th Password
+      th Grupo
+  tbody
+    for item in data
+      tr
+        td= item._id
+        td= item.nombre
+        td= item.apellidos
+        td= item.correo
+        td= item.password
+        td= item.grupo

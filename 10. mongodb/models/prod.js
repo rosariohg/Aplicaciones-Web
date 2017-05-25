@@ -16,7 +16,7 @@ module.exports = {
 show: function(req,res){
 	if(req.query._id==null){
 		prod_model.find({},function(err,items){
-
+console.log(items);
 			if(!err){
 				//res.send(items);
 				res.render('table',{data:items});
@@ -36,6 +36,7 @@ show: function(req,res){
 	},
 
 create: function(req,res){
+  console.log (req.query);
 	var item={
 nombre: req.query.nombre,
 descripcion: req.query.descripcion,

@@ -1,0 +1,14 @@
+table.table
+  thead
+    tr
+      th ID
+      th Camara
+      th Fecha
+      th Tipo
+  tbody
+    for item in data
+      tr
+        td= item._id
+        td= item.camara
+        td= item.fecha
+        td= item.tipo
