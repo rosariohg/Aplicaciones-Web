@@ -12,13 +12,18 @@ app.use(bodyParser.json());
 app.set('view engine' ,'jade');
 
 app.get('/',function(req,res){
-res.send('Hola mundo');
+	res.send('Hola mundo');
 });
 app.get('/login',function(req,res){
-	res.sender('login');
+	res.render('login');	
 });
+app.get('/resgistrar',function(req,res){
+	
+});
+
+
 app.get('/table',function(req,res){
-	res.sender('table');
+	res.render('table');
 });
 
 app.get('/producto',producto.show);
