@@ -1,0 +1,17 @@
+table.table
+	thead
+		tr
+			th 	body
+			th 	permalink
+			th 	author
+			th 	title
+			th 	tags
+			th 	comments
+			th 	date
+	tbody
+		for item in data
+			tr
+				td= item._id
+				td= item.nombre
+				td= item.descripcion
+				td= item.precio
